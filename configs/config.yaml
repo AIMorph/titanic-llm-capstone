@@ -1,0 +1,29 @@
+data:
+  path: data/titanic.csv
+  test_size: 0.2
+  random_state: 42
+  description: "Titanic passenger data (datasciencedojo/datasets titanic.csv), 891 rows, target = Survived"
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: titanic-survival
+
+runs:
+  - name: logreg_c1
+    model_type: logistic_regression
+    params: {C: 1.0, max_iter: 1000}
+  - name: logreg_c01
+    model_type: logistic_regression
+    params: {C: 0.1, max_iter: 1000}
+  - name: rf_100_depth5
+    model_type: random_forest
+    params: {n_estimators: 100, max_depth: 5, random_state: 42}
+  - name: rf_300_nodepth
+    model_type: random_forest
+    params: {n_estimators: 300, max_depth: null, random_state: 42}
+  - name: gb_lr01
+    model_type: gradient_boosting
+    params: {n_estimators: 100, learning_rate: 0.1, max_depth: 3, random_state: 42}
+  - name: gb_lr005
+    model_type: gradient_boosting
+    params: {n_estimators: 200, learning_rate: 0.05, max_depth: 2, random_state: 42}
