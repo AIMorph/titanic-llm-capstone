@@ -76,7 +76,7 @@ Six runs, evaluated on a held-out 20% test set and ranked by F1:
 **Findings:** The two logistic regression runs had the highest ROC AUC (about 0.84), even though the random forest won on F1 and accuracy. The models are close, so the choice of model mattered less than the features and preprocessing.
 
 ## Reflection
-The project contained many of the prior sprint components but allowed me to see how all parts come together in an MLOps.  I learned how Docker, containers, LLM, NLP create a pipeline for models to generate accurate predictions based on multiple experiments through validation (tests).  Understanding what are the correct pieces of information need to properly run a MLOps make the project difficult for any beginner to comprehend as a whole. The most difficult part of the MLOps process would have to be the preprocessing, training & testing. With time and patients however these will come more fluent as i complete future projects/models.
+The project contained many of the prior sprint components but allowed me to see how all parts come together in an MLOps.  I learned how Docker, containers, LLM, NLP create a pipeline for models to generate accurate predictions based on multiple experiments through validation (tests).  Understanding what are the correct pieces of information need to properly run a MLOps make the project difficult for any beginner to comprehend as a whole. The most difficult part of the MLOps process would have to be the preprocessing, training & testing. With time and patience however these will come more fluent as i complete future projects/models.
 
 ## Demo
 https://youtu.be/m0YlkjmfesI
